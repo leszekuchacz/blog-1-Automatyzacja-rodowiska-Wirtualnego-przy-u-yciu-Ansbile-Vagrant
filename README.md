@@ -10,6 +10,8 @@ cd blog1
 # - VagrantFile
 # - setup-all.yml
 
+vagrant box add debian/jessie64 https://atlas.hashicorp.com/debian/boxes/jessie64 --provider virtualbox
+
 vagrant up
 
 cat >> /etc/hosts <<EOL
